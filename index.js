@@ -36,5 +36,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(8080, () => {
-  console.log("listening");
+  console.log("listening to 8080");
 });
