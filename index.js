@@ -10,11 +10,15 @@ app.get("/", (req, res) => {
 });
 
 app.get("/cats", (req, res) => {
-  res.send({ name: "test", age: 25, isWorking: true, sex: "male" });
+  res.send({ name: "jimmy", age: 4, isFluffy: true, sex: "male" });
 });
 
 app.post("/cats", (req, res) => {
   res.send("This is a post req to /cats. Try nodemon");
+});
+
+app.delete("/cats", (req, res) => {
+  res.send("This is a delete req to /cats. You can't delete my cat");
 });
 
 app.get("/dogs", (req, res) => {
